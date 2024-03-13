@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="src/img/logo.png" height="100" alt="logo">
+
+        <h1>PT Arkatama Multi Solusindo</h1>
+        <ul>
+            <li>
+                <a href="index.html">Homepage</a>
+            </li>
+            <li>
+                <a href="jsdasar.html">JavaScript</a>
+            </li>
+            <li>
+                <a href="form.html">
+                    <button>Daftar Sekarang</button>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <h1 class="title">Form Pendaftaran Relawan Bagi-Bagi Takjil</h1>
+    <div class="form">
+        <form action="" method="post">
+            <label for="nama">Nama</label><br>
+            <input type="text" name="nama" id="nama" required class="style_input">
+            <br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required class="style_input" placeholder="contoh:abcd@gmail.com">
+            <br>
+            <label for="hp">No. HP</label><br>
+            <input type="tel" name="hp" id="hp" required class="style_input" placeholder="08**********" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}>
+            <br>
+            <label for="jk">Jenis Kelamin</label><br>
+            <input type="radio" name="jkl" id="jkl">Laki-Laki<br>
+            <input type="radio" name="jkp" id="jkp">Perempuan
+            <br>
+            <label for="prodi">Prodi</label><br>
+            <select name="prodi" id="prodi" class="style_input">
+                <option value="0">Pilih</option>
+                <option value="1">Teknik Informatika</option>
+                <option value="2">Sistem Informasi</option>
+                <option value="3">Teknik Elektro</option>
+                <option value="4">Teknik Industri</option>
+            </select>
+            <br>
+            <label for="hobi">Hobi</label><br>
+            <input type="checkbox" name="hobi" id="hobi">Membaca <br>
+            <input type="checkbox" name="hobi" id="hobi">Menulis <br>
+            <input type="checkbox" name="hobi" id="hobi">Menyanyi <br>
+            <input type="checkbox" name="hobi" id="hobi">Olahraga<br>
+            <br>
+            <label for="alamat">Alamat</label><br>
+            <textarea name="alamat" id="" cols="15" rows="2" required class="style_input" placeholder="isi alamat anda disini"></textarea>
+            <br>
+            <label for="foto">Foto Diri</label> <br>
+            <input type="file" name="foto" id="foto" class="style_input">
+            <br>
+            <div class="sbmt">
+                <input type="submit" value="DAFTAR" class="submit">
+            </div>
+        </form>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-wrapper">
+            <a href="https://instagram.com/rs_ftr"><img src="src/img/instagram.jpg" alt="ig" class="lingkaran"></a>
+            <img src="src/img/twitter.jpg" alt="twt" class="lingkaran">
+            <img src="src/img/facebook.jpg" alt="fb" class="lingkaran">
+            <img src="src/img/youtube.jpg" alt="yt" class="lingkaran">
+            <img src="src/img/gmail.jpg" alt="gmail" class="lingkaran">
+        </div><br>
+        <p>Designed By FSWD2_Fatur Rosek</p>
+    </div>
+</body>
+</html>
