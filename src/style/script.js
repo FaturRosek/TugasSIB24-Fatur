@@ -13,3 +13,9 @@ prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft -= slideWidth;
 });
+
+// Ubah bg
+function ubahMode(){
+  const ubah = document.body;
+  ubah.classList.toggle('dark');
+}
