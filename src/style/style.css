@@ -1,42 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
 
-* {
-    box-sizing: border-box;
-    
-  }
-  
-  body {
-    max-width: 1440px;
-    margin: auto;
-  }
-  
-
+html{
+  scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins',sans-serif;
+    background-color:#f6f5f5;
     margin: 0;
     padding: 0;
 }
-.nav{
+nav{
     display: flex;
-    align-items: center;
-    padding: 3px 30px;
     justify-content: space-between;
-    border-bottom: 1px solid #151515;
+    align-items:center;
+    height:70px;
+    background-color:#ffffff;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    font-size: 15px;
+
+
 }
-.nav ul{
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    align-items: center;
+nav ul{
+    list-style: none;   
 }
-.nav ul li{
-    padding: 5px 20px;
+nav ul li{
+    display: inline-block;
+    position: relative;
 }
-.nav ul li a{
-    color: #151515;
-    text-decoration: none;
+nav ul li a{
+  display: block;
+  padding: 5px 15px;
+  color: #151515;
+  text-decoration: none;
+  text-align: center;
 }
-.nav ul li button{
+nav ul li ul.dropdown li {
+  display: block;
+  
+}
+nav ul li ul.dropdown{
+  width: 100%;
+  background: #ffffff;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  text-align: center;
+}
+nav ul li a:hover{
+  background-color: #a1adc4;
+  height: 100%;
+
+}
+nav ul li:hover ul.dropdown{
+  display: block;
+}
+nav ul li button{
     background-color: #151515;
     font-weight: 600;
     color: #fff;
@@ -44,12 +66,20 @@ body{
     border: 0;
     padding: 10px 20px;
 }
+
+.gambar{
+  padding-left: 50px;
+  height: 60px;
+}
 h1{
   font-size: 35px;
   font-family: Helvetica;
   font-style: bold;
 }
-
+.aktif{
+  color: #000000;
+  font-weight: bold;
+}
 /* tombol tampilan */
 input[type="checkbox"]{
   position: relative;
@@ -84,8 +114,13 @@ input[type="checkbox"]:checked::before{
   color: #fcfcfc;
 }
 
+main{
+  padding-top: 80px;
+}
+
 /* Carousel */
   .slider-wrapper {
+    margin-top: 30px;
     margin: 1rem;
     position: relative;
     overflow: hidden;
@@ -143,38 +178,10 @@ input[type="checkbox"]:checked::before{
     height: 100%;
   }
 
-/* Section */
-.h-text{
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  max-width: 650px;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  color: #fff;
-}
-.h-text span{
-  letter-spacing: 5px;
-}
-.h-text h1{
-  font-size: 3.5em;
-}
-.h-text a{
-  text-decoration: none;
-  background: indianred;
-  padding: 10px 20px;
-  color: #fff;
-  letter-spacing: 5px;
-  transition: 0.4s;
-}
-.h-text a:hover{
-  border: 1px solid indianred;
-  background: transparent;
-}
 /* About */
 .about-container{
 	width:70%;
-	height:330px;
+	height:340px;
 	background:#ffffff;
 	border-radius:20px;
 	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
@@ -186,6 +193,7 @@ input[type="checkbox"]:checked::before{
 }
 .about-container img{
 	height:250px;
+  padding-left: 25px;
 }
 .about-text{
 	width:500px;
@@ -236,7 +244,7 @@ input{
 }
 
 /* footer */
-.footer{
+footer{
     text-align: center; 
     background: #99A799; 
     padding: 30px 0; 
@@ -259,4 +267,9 @@ input{
     background-size: 40px;
     border-radius: 100%; 
     margin: 5px; 
+}
+
+/* css js dasar */
+#js{
+  margin-top: 100px;
 }

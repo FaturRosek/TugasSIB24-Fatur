@@ -7,52 +7,64 @@
     <link rel="stylesheet" type="text/css" href="src/style/style.css">
 </head>
 <body>
-    <div class="nav">
-        <img src="src/img/logo.png" height="100" alt="logo">
-
+    <nav>
+        <img src="src/img/logo.png" alt="logo" class="gambar">
         <ul>
             <li>
-                <a href="landingdom.html">JavaScript DOM</a>
+                <a href="index.html" class="aktif">Home</a>
             </li>
             <li>
-                <a href="jsdasar.html">JavaScript</a>
+                <a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="../Tugas_P8/package/jsdasar.html">JavaScript Fundamental</a></li>
+                        <li><a href="../Tugas_P8/package/productapi.html">Product API</a></li>
+                    </ul>
             </li>
             <li>
-                <a href="form.html">
-                    <button>Daftar Sekarang</button>
+                <a href="#footer">Contact us</a>
+            </li>
+            <li>
+                <a href="package/form.html">
+                    <button>Register Now</button>
                 </a>
             </li>
+            <li>
+                <input type="checkbox" onclick="ubahMode()">
+            </li>
         </ul>
-    </div>
-    <div class="slider-wrapper">
-        <button class="slide-arrow" id="slide-arrow-prev">
-          &#8249;
-        </button>
-        <button class="slide-arrow" id="slide-arrow-next">
-          &#8250;
-        </button>
-        <div class="slides-container" id="slides-container">
-          <div class="slide"><img src="src/img/foto1.png" alt="foto" id="foto"></div>
-          <div class="slide"><img src="src/img/foto2.jpg" alt="foto" id="foto"></div>
-          <div class="slide"><img src="src/img/foto3.jpg" alt="foto" id="foto"></div>
-          <div class="slide"><img src="src/img/foto.jpg" alt="foto" id="foto"></div>
+    </nav>
+    <main>
+        <div class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">
+              &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+              &#8250;
+            </button>
+            <div class="slides-container" id="slides-container">
+              <div class="slide"><img src="src/img/logo1.jpeg" alt="foto" id="foto"></div>
+              <div class="slide"><img src="src/img/logo2.jpeg" alt="foto" id="foto"></div>
+              <div class="slide"><img src="src/img/foto3.jpg" alt="foto" id="foto"></div>
+              <div class="slide"><img src="src/img/foto.jpg" alt="foto" id="foto"></div>
+            </div>
+            <script src="src/style/script.js"></script>
         </div>
-        <script src="src/style/script.js"></script>
-    </div>
-    <div id="About">
-        <div class="about-container">
-                <img class="gambar" src="src/img/gambar.jpg"/>
-                <div class="about-text">
-                    <p>About Me</p>
-                    <p>Mahasiswa 1000 Impian</p>
-                    <p>Hello Nama Saya Fatur Rosek biasa dipanggil Fatur, Saya Adalah seorang Mahasiswa yang ingin menjadi programmer yang handal. Programmer adalah seseorang yang menulis kode untuk menciptakan perangkat lunak komputer.
-                        Istilah ini merujuk ke seorang spesialis dalam satu bahasa pemrograman komputer. Di beberapa perusahaan, posisi ini biasanya disebut sebagai software engineer. Posisi ini dicari karena keterampilan mereka dalam menulis kode untuk membuat proyek atau fitur baru yang mungkin terjadi.
-                        Mereka bertugas untuk menciptakan sebuah kode dan mengubahnya menjadi set instruksi yang dapat diikuti oleh komputer. Kode sumber ini ditulis dalam bahasa pemrograman tertentu agar dapat dipahami oleh komputer. Nantinya, set instruksi inilah menghasilkan interaksi yang ada di setiap aplikasi atau perangkat lunak yang lain.
-                    </div>
+        <div id="About">
+            <div class="about-container">
+                    <img class="gambar" src="src/img/gambar.jpg"/>
+                    <div class="about-text">
+                        <p>About Me</p>
+                        <p>Mahasiswa 1000 Impian</p>
+                        <p>Hello Nama Saya Fatur Rosek biasa dipanggil Fatur, Saya Adalah seorang Mahasiswa yang ingin menjadi programmer yang handal. Programmer adalah seseorang yang menulis kode untuk menciptakan perangkat lunak komputer.
+                            Istilah ini merujuk ke seorang spesialis dalam satu bahasa pemrograman komputer. Di beberapa perusahaan, posisi ini biasanya disebut sebagai software engineer. Posisi ini dicari karena keterampilan mereka dalam menulis kode untuk membuat proyek atau fitur baru yang mungkin terjadi.
+                            Mereka bertugas untuk menciptakan sebuah kode dan mengubahnya menjadi set instruksi yang dapat diikuti oleh komputer. Kode sumber ini ditulis dalam bahasa pemrograman tertentu agar dapat dipahami oleh komputer. Nantinya, set instruksi inilah menghasilkan interaksi yang ada di setiap aplikasi atau perangkat lunak yang lain.
+                        </div>
+            </div>
         </div>
-    </div>
+    </main>
+    
 
-      <div class="footer">
+    <footer id="footer">
         <div class="footer-wrapper">
             <a href="https://instagram.com/rs_ftr"><img src="src/img/instagram.jpg" alt="ig" class="lingkaran"></a>
             <img src="src/img/twitter.jpg" alt="twt" class="lingkaran">
@@ -61,6 +73,6 @@
             <img src="src/img/gmail.jpg" alt="gmail" class="lingkaran">
         </div><br>
         <p>Designed By FSWD2_Fatur Rosek</p>
-    </div>
+    </footer>
 </body>
 </html>

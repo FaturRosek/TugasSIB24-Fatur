@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="../src/style/style.css">
+    <script src="../src/style/script.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <img src="src/img/logo.png" height="100" alt="logo">
+    <nav>
+        <img src="../src/img/logo.png" alt="logo" class="gambar">
         <ul>
             <li>
-                <a href="index.html">Homepage</a>
+                <a href="../index.html">Home</a>
             </li>
             <li>
-                <a href="jsdasar.html">JavaScript</a>
+                <a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="#">JavaScript Fundamental</a></li>
+                        <li><a href="#">Product API</a></li>
+                    </ul>
             </li>
             <li>
-                <a href="form.html">
-                    <button>Daftar Sekarang</button>
+                <a href="#footer">Contact us</a>
+            </li>
+            <li>
+                <a href="package/form.html">
+                    <button>Register Now</button>
                 </a>
             </li>
+            <li>
+                <input type="checkbox" onclick="ubahMode()">
+            </li>
         </ul>
-    </div>
+    </nav>
     <h1 class="title">Form Pendaftaran Relawan Bagi-Bagi Takjil</h1>
     <div class="form">
         <form action="" method="post">
@@ -65,16 +76,15 @@
             </div>
         </form>
     </div>
-    
-    <div class="footer">
+    <footer id="footer">
         <div class="footer-wrapper">
-            <a href="https://instagram.com/rs_ftr"><img src="src/img/instagram.jpg" alt="ig" class="lingkaran"></a>
-            <img src="src/img/twitter.jpg" alt="twt" class="lingkaran">
-            <img src="src/img/facebook.jpg" alt="fb" class="lingkaran">
-            <img src="src/img/youtube.jpg" alt="yt" class="lingkaran">
-            <img src="src/img/gmail.jpg" alt="gmail" class="lingkaran">
+            <a href="https://instagram.com/rs_ftr"><img src="../src/img/instagram.jpg" alt="ig" class="lingkaran"></a>
+            <img src="../src/img/twitter.jpg" alt="twt" class="lingkaran">
+            <img src="../src/img/facebook.jpg" alt="fb" class="lingkaran">
+            <img src="../src/img/youtube.jpg" alt="yt" class="lingkaran">
+            <img src="../src/img/gmail.jpg" alt="gmail" class="lingkaran">
         </div><br>
         <p>Designed By FSWD2_Fatur Rosek</p>
-    </div>
+    </footer>
 </body>
 </html>
