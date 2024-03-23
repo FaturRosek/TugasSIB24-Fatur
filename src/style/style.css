@@ -242,7 +242,16 @@ input{
 .jv{
   padding: 10px 50px;
 }
+/* form API */
 
+.table{
+  margin-left: 50px;
+}
+table, tr, th, td{
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 50px;
+}
 /* footer */
 footer{
     text-align: center; 
