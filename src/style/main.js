@@ -1,4 +1,4 @@
-let endpoint = 'https://crudcrud.com/api/4400afc109b04a1eba32238e5ed0e6ce/users'
+let endpoint = 'https://crudcrud.com/api/ff0ed37221674adc99e176041e14bbab/users'
 
 async function fetchProducts() {
     const response = await fetch(endpoint);
@@ -50,9 +50,10 @@ async function saveData() {
     document.getElementById('harga').value = '';
 }
 
+
 // Hapus Data
 async function hapusData(_id) {
-    const response = await fetch(`https://crudcrud.com/api/ae7344f466764d7e8f25cd9642c34901/users/${_id}`, {
+    const response = await fetch(`https://crudcrud.com/api/ff0ed37221674adc99e176041e14bbab/users/${_id}`, {
         method: 'DELETE'
     });
 
