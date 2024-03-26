@@ -2,33 +2,37 @@
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-img{
+
+img {
     width: 100%;
 }
-body{
+
+body {
     background-color: #ddd;
     font-size: 18px;
-    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
     margin: 50px;
 }
 
 /* Container */
-.container{
+.container {
     display: grid;
     gap: 10px;
 }
 
 /* Header */
-.header{
+.header {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         'hero hero feature-1'
         'hero hero feature-2';
 }
-.hero{
+
+.hero {
     grid-area: hero;
     min-height: 300px;
     background-image: url(../img/produk.jpg);
@@ -37,7 +41,7 @@ body{
     padding: 50px;
 }
 
-.hero > * {
+.hero>* {
     display: none;
 }
 
@@ -52,43 +56,46 @@ body{
     cursor: pointer;
 }
 
-.feature-1{
+.feature-1 {
     grid-template-rows: feature-1;
     background-image: url(../img/produk3.jpg);
     background-size: cover;
     color: black;
 }
-.feature-2{
+
+.feature-2 {
     grid-area: feature-2;
     background-image: url(../img/produk4.jpg);
     background-size: cover;
 }
 
-.features .price{
+.features .price {
     font-size: 3em;
     font-weight: 200;
 }
 
 /* Navbar */
-.menu{
+.menu {
     order: -1;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
 }
 
-.menu .brand{
+.menu .brand {
     font-size: 1.3em;
     color: #333;
-    
+
 }
-.menu ul{
+
+.menu ul {
     display: grid;
     list-style: none;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5px;
 }
-.menu a{
+
+.menu a {
     display: block;
     background-color: #000;
     color: white;
@@ -100,7 +107,7 @@ body{
 }
 
 /* Hambergur Menu */
-.menu-toggle{
+.menu-toggle {
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -108,7 +115,8 @@ body{
     position: relative;
     z-index: 999;
 }
-.menu-toggle span{
+
+.menu-toggle span {
     display: block;
     width: 28px;
     height: 3px;
@@ -116,7 +124,8 @@ body{
     border-radius: 3px;
     transition: all 0.5s;
 }
-.menu-toggle input{
+
+.menu-toggle input {
     display: block;
     position: absolute;
     background-color: black;
@@ -130,33 +139,37 @@ body{
 }
 
 /* Hamburger Menu Animasi */
-.menu-toggle span:nth-child(2){
+.menu-toggle span:nth-child(2) {
     transform-origin: 0 0;
 }
-.menu-toggle span:nth-child(4){
+
+.menu-toggle span:nth-child(4) {
     transform-origin: 0 100%;
 }
-.menu-toggle input:checked ~ span:nth-child(2){
+
+.menu-toggle input:checked~span:nth-child(2) {
     background-color: white;
     transform: rotate(45deg) translate(-1px, -1px);
 }
-.menu-toggle input:checked ~ span:nth-child(4){
+
+.menu-toggle input:checked~span:nth-child(4) {
     background-color: white;
     transform: rotate(-45deg) translate(-1px, 0);
 }
-.menu-toggle input:checked ~ span:nth-child(3){
+
+.menu-toggle input:checked~span:nth-child(3) {
     opacity: 0;
     transform: scale(0);
 }
 
 /* Services */
-.services{
+.services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
 }
 
-.service{
+.service {
     background-color: white;
     padding: 15px;
     text-align: center;
@@ -164,13 +177,16 @@ body{
     border-radius: 3px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
-.service .icon{
+
+.service .icon {
     font-size: 3em;
 }
-.service h3{
+
+.service h3 {
     font-size: 1.5em;
 }
-.service p{
+
+.service p {
     font-weight: 200;
     letter-spacing: 1px;
     font-size: 0.8em;
@@ -178,10 +194,11 @@ body{
 
 
 /* Main Form */
-main{
+main {
     margin-top: 1rem;
 }
-.form input, select{
+
+.form input {
     width: 100%;
     height: 30px;
     background: #b8b4b4;
@@ -191,7 +208,8 @@ main{
     outline: none;
     border-radius: 5px;
 }
-.form button{
+
+.form button {
     width: 60%;
     height: 40px;
     margin: 10px auto;
@@ -207,29 +225,63 @@ main{
     transition: .2s ease-in;
     cursor: pointer;
 }
-.form button:hover{
+
+.form button:hover {
     background: #aaa;
 }
 
+/* Tabel */
+.table-container {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table th {
+    background-color: #f2f2f2;
+    padding: 12px 8px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+.table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+.table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+#konten {
+    text-align: center;
+}
+
+
 /* Responsive Breakpoint */
-@media (max-width: 1024px){
-    .menu{
+@media (max-width: 1024px) {
+    .menu {
         order: inherit;
         grid-template-columns: 1fr;
     }
 
-    .menu .brand{
+    .menu .brand {
         display: none;
     }
 
-    .hero > *{
+    .hero>* {
         display: block;
         background-color: black;
         color: white;
         padding: 5px;
         margin-bottom: 5px;
     }
-    .hero{
+
+    .hero {
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -237,15 +289,17 @@ main{
     }
 }
 
-@media (max-width: 768px){
-    .menu{
+@media (max-width: 768px) {
+    .menu {
         order: -1;
         justify-items: end;
     }
-    .menu-toggle{
+
+    .menu-toggle {
         display: flex;
     }
-    .menu ul{
+
+    .menu ul {
         display: flex;
         position: absolute;
         right: 0;
@@ -261,18 +315,25 @@ main{
         opacity: 0;
         transition: all 1s;
     }
-    .menu ul.slide{
+
+    .menu ul.slide {
         opacity: 1;
         transform: translateY(0);
     }
-    
+
 }
 
-@media (max-width: 600px){
-    .header{
-        grid-template-areas: 
+@media (max-width: 600px) {
+    .header {
+        grid-template-areas:
             'hero'
             'feature-1'
             'feature-2';
+    }
+
+    .table th,
+    .table td {
+        font-size: 12px;
+        /* Decrease font size for smaller screens */
     }
 }

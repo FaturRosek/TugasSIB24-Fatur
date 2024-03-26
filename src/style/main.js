@@ -1,4 +1,4 @@
-let endpoint = 'https://crudcrud.com/api/ff0ed37221674adc99e176041e14bbab/users'
+let endpoint = 'https://crudcrud.com/api/af2ed99119f84ff9a887ce1472ee7516/users'
 
 async function fetchProducts() {
     const response = await fetch(endpoint);
@@ -53,7 +53,7 @@ async function saveData() {
 
 // Hapus Data
 async function hapusData(_id) {
-    const response = await fetch(`https://crudcrud.com/api/ff0ed37221674adc99e176041e14bbab/users/${_id}`, {
+    const response = await fetch(`https://crudcrud.com/api/af2ed99119f84ff9a887ce1472ee7516/users/${_id}`, {
         method: 'DELETE'
     });
 
