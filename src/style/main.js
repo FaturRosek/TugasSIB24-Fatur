@@ -68,3 +68,11 @@ function ubahMode() {
     const ubah = document.body;
     ubah.classList.toggle('dark');
 }
+
+// Product Responsive
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');
+});
