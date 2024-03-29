@@ -284,6 +284,7 @@ td {
 .daftar {
   justify-content: center;
   display: flex;
+  gap: 50px;
 
 }
 
